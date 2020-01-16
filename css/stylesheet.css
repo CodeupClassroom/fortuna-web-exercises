@@ -1,0 +1,22 @@
+/*
+This is the styling for main headings
+*/
+
+#main-story>.headline {
+    font-size: 48px;
+    color: rebeccapurple;
+}
+
+h1.headline {
+    color: steelblue;
+    text-decoration: underline;
+}
+
+#main-story {
+    border: rebeccapurple 2px solid;
+}
+
+header, footer {
+    background-color: rebeccapurple;
+    color: antiquewhite;
+}
