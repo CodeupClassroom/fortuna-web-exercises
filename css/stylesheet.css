@@ -2,21 +2,66 @@
 This is the styling for main headings
 */
 
-#main-story>.headline {
-    font-size: 48px;
+* {
+    border: 2px red solid;
+}
+
+body {
+    background-color: steelblue;
+    background-image: url("../img/craft-paper.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+#main-story {
     color: rebeccapurple;
 }
 
-h1.headline {
+#main-story>h1.headline {
+    font-size: 220%;
     color: steelblue;
-    text-decoration: underline;
+}
+
+h1.headline {
+    color: #FACE0A; /* #EEFF00 */
+    text-decoration: overline #f00;
+    font-family: 'Permanent Marker', cursive;
+    font-style: oblique;
 }
 
 #main-story {
     border: rebeccapurple 2px solid;
+    font-weight: bold;
+}
+
+.news-story p {
+    text-align: start;
+    text-indent: 30px;
 }
 
 header, footer {
     background-color: rebeccapurple;
     color: antiquewhite;
+}
+
+a:link {
+    color: aquamarine;
+}
+
+a:visited {
+    color: palevioletred;
+}
+
+a:hover {
+    color: antiquewhite;
+}
+
+a:active {
+    color: red;
+}
+
+ul {
+    list-style-type: circle;
 }
