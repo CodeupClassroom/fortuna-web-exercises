@@ -1,0 +1,42 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Ubuntu, sans-serif;
+    --text-info: rgb(73, 67, 159);
+    --bg-info: rgb(205, 222, 255);
+    --text-success: #00622a;
+    --bg-success: #cff3da;
+    --text-warning: #a49946;
+    --bg-warning: #fbfdbd;
+    --text-error: rgb(142,0,7);
+    --bg-error: #fff0f5;
+}
+
+.message {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: .5em;
+    margin: .25em;
+}
+
+.message-info {
+    background: var(--bg-info);
+    color: var(--text-info);
+}
+
+.message-success {
+    background: var(--bg-success);
+    color: var(--text-success);
+}
+
+.message-warning {
+    background: var(--bg-warning);
+    color: var(--text-warning);
+}
+
+.message-error {
+    background: var(--bg-error);
+    color: var(--text-error);
+}

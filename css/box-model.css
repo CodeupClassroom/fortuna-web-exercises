@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+}
+
+p {
+    /*box-sizing: border-box;*/
+    background: firebrick;
+    color: whitesmoke;
+    width: 150px;
+    height: 250px;
+    padding: 25px;
+    border: solid burlywood 10px;
+    overflow: auto;
+    /*margin: 0 0 15px;*/
+    /*margin-left: 15px;*/
+    /*border-top: 55px solid burlywood;*/
+}
+
+span.this-one {
+    color: burlywood;
+}
