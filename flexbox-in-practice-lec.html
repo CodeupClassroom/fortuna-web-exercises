@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flexbox Basics Examples</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			margin: 0;
+			font-family: Helvetica;
+			font-weight: bold;
+		}
+
+		.flex-container {
+			border: 3px solid goldenrod;
+
+			/*Centering the entire div using margin auto*/
+			/*margin: 0 auto;*/
+			/*width: 50%;*/
+
+			/*Add flex properties*/
+			display: flex;
+
+			height: 10em;
+
+			/*justify-content: center;*/
+			/*align-items:center;*/
+		}
+
+		.flex-item{
+			background: #BFD45D;
+			border: 2px solid #F9EFD6;
+			padding: 1em;
+
+
+			margin: auto;
+		}
+
+		/*#box-3{*/
+		/*	 margin-left: auto;*/
+		/* }*/
+
+		/*#box-1{*/
+		/*	margin-right: auto;*/
+		/*}*/
+
+		/*#box-2{*/
+		/*	margin: 0 auto;*/
+		/*}*/
+
+	</style>
+</head>
+<body>
+<h1>FLEXBOX IN PRACTICE</h1>
+
+<h3>Flexbox Examples</h3>
+
+<div class="flex-container">
+	<div class="flex-item" id="box-1" >Item 1</div>
+	<div class="flex-item" id="box-2" >Item 2</div>
+	<div class="flex-item" id="box-3">Item 3</div>
+</div>
+
+
+<!--
+	**********************************
+				CENTERING
+	**********************************
+	>> We learned margin: 0 auto
+
+	TODO TOGETHER: justify-content: center on parent container
+
+
+	TODO TOGETHER:
+		(1) Set height to 10em on parent container
+		(2) VERTICAL CENTERING >> align-items:center
+
+
+	>> A flexbox item can be centered ==> margin: auto
+	TODO TOGETHER: Set height to 10em; set margin:auto on flex-item
+
+
+
+	TODO TOGETHER:
+		(1) margin-left: auto; on box3
+		(2) margin-right: auto; on box2
+
+-->
+
+
+</body>
+</html>
