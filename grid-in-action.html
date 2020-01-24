@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CompuCare</title>
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/317175159f.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            font-family: 'Didact Gothic', sans-serif;
+
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background: #3c3c3c;
+            color: #00c853;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            position: fixed;
+            width: 100vw;
+            height: 8vh;
+            top: 0;
+            box-shadow: #00c853 0 0 5px;
+        }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        nav li {
+            margin: 0 20px;
+        }
+
+        #the-page {
+            display: grid;
+            grid-template-areas:
+            "header"
+            "main"
+            "footer";
+        }
+        header {
+            grid-area: header;
+            height: 100vh;
+            background: #00c853;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        header h1 {
+            font-size: 5em;
+            margin: 0;
+            box-shadow: #00c853 5px 5px;
+        }
+        header h2 {
+            margin: 0;
+            box-shadow: #00c853 5px 5px;
+        }
+        main {
+            grid-area: main;
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-areas:
+                "aside content content"
+                "aside cta cta"
+                "aside review star-rating"
+                "aside review2 star-rating2"
+                "aside review3 star-rating3";
+        }
+        #side-nav {
+            margin: 0;
+            grid-area: aside;
+            background: #3c3c3c;
+            color: #00c853;
+            border-radius: 0 0 30px 0;
+        }
+        #side-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 5px;
+        }
+        #side-nav li {
+            margin: 5px;
+        }
+        #side-nav a {
+            text-decoration: none;
+            color: #00c853;
+        }
+        article {
+            grid-area: content;
+        }
+        article p {
+            text-indent: 2em;
+            margin: 1em;
+        }
+        #call-to-action {
+            grid-area: cta;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 5px 25px;
+        }
+        #call-to-action div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 30px;
+            border: solid 5px black;
+            padding: 10px;
+            margin: 0 25px;
+        }
+        #call-to-action p {
+            text-indent: 2em;
+        }
+        #review1 {
+            margin: 15px 25px;
+            grid-area: review;
+        }
+        #review2 {
+            margin: 15px 25px;
+            grid-area: review2;
+        }
+        #review3 {
+            margin: 15px 25px;
+            grid-area: review3;
+        }
+        #stars1 {
+            margin: 15px 25px;
+            grid-area: star-rating;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #stars2 {
+            margin: 15px 25px;
+            grid-area: star-rating2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #stars3 {
+            margin: 15px 25px;
+            grid-area: star-rating3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        footer {
+            grid-area: footer;
+            background: #00c853;
+            color: #3c3c3c;
+            height: 33vh;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+        footer p {
+            margin: 0 15px;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <ul>
+        <li>CompuCare</li>
+        <li>Products</li>
+        <li>Directory</li>
+        <li>Blogs</li>
+        <li>More</li>
+    </ul>
+</nav>
+<div id="the-page">
+    <header>
+        <h1>Welcome to CompuCare</h1>
+        <h2>If you care, we care.</h2>
+    </header>
+    <main>
+        <aside id="side-nav">
+            <ul>
+                <li><a href="#review1">See What Others are Saying!</a></li>
+                <li>Fast Service</li>
+                <li>Techs Who Care</li>
+                <li>Techs With Knowledge</li>
+            </ul>
+        </aside>
+        <article id="content">
+            <p>
+                They're using our own satellites against us. And the clock is ticking. This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows. Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
+
+                Jaguar shark! So tell me - does it really exist? Did he just throw my cat out of the window? Do you have any idea how long it takes those cups to decompose. I gave it a cold? I gave it a virus. A computer virus. You know what? It is beets. I've crashed into a beet truck.
+
+                Eventually, you do plan to have dinosaurs on your dinosaur tour, right? God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Life finds a way. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine?
+
+                So you two dig up, dig up dinosaurs? This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows. Checkmate... Hey, take a look at the earthlings. Goodbye! Is this my espresso machine? Wh-what is-h-how did you get my espresso machine?
+                They're using our own satellites against us. And the clock is ticking. This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows. Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
+
+                Jaguar shark! So tell me - does it really exist? Did he just throw my cat out of the window? Do you have any idea how long it takes those cups to decompose. I gave it a cold? I gave it a virus. A computer virus. You know what? It is beets. I've crashed into a beet truck.
+
+                Eventually, you do plan to have dinosaurs on your dinosaur tour, right? God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Life finds a way. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine?
+
+                So you two dig up, dig up dinosaurs? This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows. Checkmate... Hey, take a look at the earthlings. Goodbye! Is this my espresso machine? Wh-what is-h-how did you get my espresso machine?
+                They're using our own satellites against us. And the clock is ticking. This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows. Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
+
+                Jaguar shark! So tell me - does it really exist? Did he just throw my cat out of the window? Do you have any idea how long it takes those cups to decompose. I gave it a cold? I gave it a virus. A computer virus. You know what? It is beets. I've crashed into a beet truck.
+
+                Eventually, you do plan to have dinosaurs on your dinosaur tour, right? God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Life finds a way. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine?
+
+                So you two dig up, dig up dinosaurs? This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows. Checkmate... Hey, take a look at the earthlings. Goodbye! Is this my espresso machine? Wh-what is-h-how did you get my espresso machine?
+            </p>
+        </article>
+        <div id="call-to-action">
+            <div>
+                <h1><i class="fas fa-smile-beam"></i></h1>
+                <h2>Happy to Help!</h2>
+                <p>Our technicians are always happy to help you with any questions you may have!</p>
+            </div>
+            <div>
+                <h1><i class="fas fa-smile-beam"></i></h1>
+                <h2>Happy to Help!</h2>
+                <p>Our technicians are always happy to help you with any questions you may have!</p>
+            </div>
+            <div>
+                <h1><i class="fas fa-smile-beam"></i></h1>
+                <h2>Happy to Help!</h2>
+                <p>Our technicians are always happy to help you with any questions you may have!</p>
+            </div>
+        </div>
+        <p id="review1">
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem beatae corporis deserunt dignissimos dolor, exercitationem explicabo fugiat impedit inventore ipsum minus nesciunt nulla pariatur perspiciatis quam quidem reiciendis voluptates, voluptatibus!</span><span>Accusamus aliquam aspernatur, dicta distinctio ea eaque eveniet ex excepturi impedit ipsum labore laudantium magni molestias neque nihil optio provident quasi quidem quis quo rem sequi vitae voluptatem. Accusantium, dignissimos.</span>
+        </p>
+        <h2 id="stars1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h2>
+        <p id="review2">
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem beatae corporis deserunt dignissimos dolor, exercitationem explicabo fugiat impedit inventore ipsum minus nesciunt nulla pariatur perspiciatis quam quidem reiciendis voluptates, voluptatibus!</span><span>Accusamus aliquam aspernatur, dicta distinctio ea eaque eveniet ex excepturi impedit ipsum labore laudantium magni molestias neque nihil optio provident quasi quidem quis quo rem sequi vitae voluptatem. Accusantium, dignissimos.</span>
+        </p>
+        <h2 id="stars2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i></h2>
+        <p id="review3">
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem beatae corporis deserunt dignissimos dolor, exercitationem explicabo fugiat impedit inventore ipsum minus nesciunt nulla pariatur perspiciatis quam quidem reiciendis voluptates, voluptatibus!</span><span>Accusamus aliquam aspernatur, dicta distinctio ea eaque eveniet ex excepturi impedit ipsum labore laudantium magni molestias neque nihil optio provident quasi quidem quis quo rem sequi vitae voluptatem. Accusantium, dignissimos.</span>
+        </p>
+        <h2 id="stars3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h2>    </main>
+    <footer>
+        <p>CompuCare™ 1984-2020.</p>
+    </footer>
+</div>
+</body>
+</html>
