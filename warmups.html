@@ -19,8 +19,8 @@
 			return (num * num) % 3 === 0;
 		}
 
-		console.log(squaredNumDivisibleByThree(3));
-		console.log(squaredNumDivisibleByThree(7));
+		// console.log(squaredNumDivisibleByThree(3));
+		// console.log(squaredNumDivisibleByThree(7));
 
 		// console.log("hello!");
 
@@ -120,6 +120,19 @@
 		// console.log(determineType(true)) // returns boolean
 		// console.log(determineType("hello")) // returns string
 
+
+		//Write a function called isString that accepts a single input, and returns true if the data type is a string or false if it is not a string
+
+
+		function isString(input) {
+			return typeof input === "string";
+		}
+
+
+
+
+		console.log(isString(true)); // returns false
+		console.log(isString("hello")); // returns true
 
 
 
