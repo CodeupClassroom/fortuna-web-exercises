@@ -17,21 +17,61 @@ console.log("hello from conditionals lec.js!");
 
 // ================ IF STATEMENT EXAMPLES ================
 //TODO Together: Show a specific navbar if user is admin
+var isAdmin = true;
+if(isAdmin) {
+    // Display a specific navbar
+    console.log("Displaying Admin Navbar");
+
+}
 //TODO Together: Send a 20% off coupon if its users birthday
+var isBirthday = true;
+if(isBirthday) {
+    // send 20% coupon
+    console.log("Sending Coupon");
+}
 //TODO Together: Write an if statement that alerts "It's raining" if isRainy is true
+var isRainy = true;
+
+if(isRainy) {
+    // alert("It's raining!");
+}
 //TODO Together: Write an if statement that alerts the user whether or not they have enough money to buy a new item. Assume there are no hidden fees or taxes.
+var currentBalance = 100000;
+var itemCost = 50000;
+
+if(currentBalance > itemCost) {
+    // alert("You can buy it!");
+}
 
 
 
 //TODO: Write an if statement that alerts "Sorry, game over" if numberOfLives is 0
-//TODO: Write an if statement that alerts "It's snowing!" if weather is equal to "snowing"
-//TODO: Write an if statement that alerts true if numberInput is greater than but not equal to 10
+var numberOfLives = 4;
+if( numberOfLives === 0) {
+    // alert("Sorry, game over!")
+}
 
+//TODO: Write an if statement that alerts "It's snowing!" if weather is equal to "snowing"
+var weather = "snowing";
+if(weather === "snowing") {
+    // alert("It's Snowing!");
+}
+//TODO: Write an if statement that alerts true if numberInput is greater than but not equal to 10
+var number = 11;
+if(number > 10) {
+    // alert("number is greater than 10");
+}
 
 
 
 //TODO: EXTRA BONUS - Refactor each of the previous statements as functions.
+function greaterThan10(numberInput) {
+    if(numberInput > 10) {
+        // alert("number is greater than 10");
+    }
+}
 
+console.log(greaterThan10(number));
 
 
 
@@ -48,15 +88,56 @@ console.log("hello from conditionals lec.js!");
 
 // =============== IF / ELSE STATEMENT EXAMPLES ================
 //TODO Together: Show a specific navbar if user is admin, else show a different navbar
-//TODO Together: Write an if statement that alerts "It's raining" if isRainy is true, else return "have a nice day!"
+var isAdmin = true;
+if(isAdmin) {
+    // Display a specific navbar
+    console.log("Displaying Admin Navbar");
 
+} else {
+    // display non-admin navbar
+    console.log("Displaying regular navbar");
+}
+//TODO Together: Write an if statement that alerts "It's raining" if isRainy is true, else return "have a nice day!"
+var isRaining = false;
+if(isRaining) {
+    // alert("It's raining!");
+} else {
+    // alert("Have a nice Day!");
+}
 
 
 
 //TODO: Write an if statement that alerts "Sorry, game over" if numberOfLives is 0, else alert "Next Level!"
+var numberOfLives = 0;
+if(numberOfLives===0) {
+    // alert("Game Over!");
+} else {
+    // alert("Next Level!");
+}
 //TODO: Write an if statement that alerts "It's snowing!" if weather is equal to "snowing", else alert "Check back later for more details!"
+var weather = "windy";
+if(weather === "snowing") {
+    // alert("It's snowing!");
+} else {
+    // alert("Check back later for more details.");
+}
 //TODO: Write an if statement that alerts true if numberInput is greater than 10, else alert "the number is less than 10"
+var numberInput = 11;
+if(numberInput > 10) {
+    // alert(true);
+} else {
+    // alert("the number is less than 10");
+}
 //TODO: Refactor todo#1 as a function named checkIfGameIsOver, that accepts numberOfLives and returns "Sorry, game over" if numberOfLives is 0, else return "Next Level!.
+function checkIfGameIsOver(numberOfLives) {
+    if(numberOfLives === 0) {
+        return "Sorry, game over";
+    } else {
+        return "Next Level!";
+    }
+}
+
+// alert(checkIfGameIsOver(0));
 
 
 
@@ -84,32 +165,58 @@ console.log("hello from conditionals lec.js!");
 
 // =============== IF / ELSE IF/ELSE STATEMENT EXAMPLES ================
 //TODO Together: Write an if/else if/else statement that alerts "It's snowing!" if weather is equal to "snowing", alerts "It's raining" if weather is equal to "raining", alerts "have a nice day" for all other cases
+// var weather = "raining";
+// if(weather === "snowing") {
+//     alert("It's snowing!");
+// } else if(weather === "raining") {
+//     alert("It's raining!");
+// } else {
+//     alert("Have a nice day!");
+// }
 
 //TODO Together: refactor the above statement as a function
+function checkWeather(weather) {
+    if(weather === "snowing") {
+        return "It's snowing!";
+    } else if(weather === "raining") {
+        return "It's raining!";
+    } else {
+        return "Have a nice day!";
+    }
+}
+
+console.log(checkWeather("cloudy"));
+// alert(checkWeather("meatballs"));
 
 // Together: PIZZA PREFERENCE EXAMPLE
-
-// var pizzaPreference = prompt("What kind of pizza do you like?");
+// var pizzaPreference = (prompt("What kind of pizza do you like?")).toLowerCase();
 // console.log("User pizza input: " + pizzaPreference);
-//
-// if (pizzaPreference === "pineapple and hot sauce") {
-//     alert("What a coincidence, that's my favorite!");
-// } else if (pizzaPreference === "cheese") {
-//     alert("Just plain cheese? Okay...");
-// }  else if (pizzaPreference === "ham"){
-//     alert("Ham is easy to spell and awesome!");
+// if(pizzaPreference === "pineapple and hot sauce") {
+//     // alert("What a coincidence, I love that one too");
+// } else if(pizzaPreference === "cheese") {
+//     // alert("Just plain cheese... okay.");
+// } else if(pizzaPreference === "ham") {
+//     // alert("Ham is easy to spell and awesome");
 // } else {
-//     alert(pizzaPreference + " isn't my favorite, but let's order some!");
+//     // alert(pizzaPreference + " isn't my favorite, but let's order some.");
 // }
 
 
-
-
 //TODO: Write a function that accepts a string that is a traffic light color as an input. When this function is called, it should return a message informing the user what to do when approaching that color light at an intersection.
-
-
-
-
+// function checkTrafficLight(lightColor) {
+//     if(lightColor === "red") {
+//         return "stop";
+//     } else if(lightColor === "yellow") {
+//         return "slow";
+//     } else if(lightColor === "green") {
+//         return "Go";
+//     } else {
+//         return "Proceed with caution";
+//     }
+// }
+//
+// console.log(checkTrafficLight("blinking"));
+// console.log(checkWeather("raining"));
 
 
 // ================ NESTED STATEMENTS ===============
@@ -158,6 +265,42 @@ console.log("hello from conditionals lec.js!");
 
 // =============== SWITCH STATEMENT ================
 //TODO Together:
+
+var pizzaChoice = (prompt("What kind of pizza do you like?")).toLowerCase();
+console.log("User pizza input: " + pizzaChoice);
+
+function pizzaMessage(pizzaPreference) {
+    var pizzaConfirmation; // string with confirmation message
+
+    switch(pizzaPreference) {
+        case "pineapple and hot sauce":
+            pizzaConfirmation = "What a coincidence, I love that one too";
+            break;
+        case "cheese":
+            pizzaConfirmation = "Just plain cheese... okay.";
+            break;
+        case "ham":
+            pizzaConfirmation = "Ham is easy to spell and awesome";
+            break;
+        default:
+            pizzaConfirmation = pizzaPreference + " isn't my favorite, but let's order some.";
+            break;
+    } // end of switch
+
+    return pizzaConfirmation;
+}
+
+console.log(pizzaMessage(pizzaChoice));
+
+
+
+
+
+
+
+
+
+
 
 // var pizzaPreference = prompt("What kind of pizza do you like?");
 //
