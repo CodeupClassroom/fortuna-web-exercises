@@ -222,6 +222,28 @@ console.log(checkWeather("cloudy"));
 // ================ NESTED STATEMENTS ===============
 //TODO Together: If user is under 15, they are not eligible for a learners permit, else they are. If they are eligible, check age. If they are 15 they are eligible for a learners permit, if they are 16 or older and have a permit, they are eligible for license, if they are 16 or older and do not have a permit, they are not eligble for a license.
 
+// user < 15 = not eligible
+// user > 15 = are eligible
+var userAge = 17;
+var hasPermit = true;
+
+if( userAge < 15 ) {
+    alert("You are not eligible for a permit");
+} else {
+    // all the other possibilities
+    // check for user age
+    if(userAge === 15) {
+        alert( "You are eligible for a learner's permit");
+    } else if((userAge >= 16) && hasPermit) {
+        // older than or equal to 16, and they have a permit
+        alert("You can get a driver's license")
+    } else if((userAge >= 16) && !hasPermit) {
+        // 16 and older, but has no permit
+        alert("You are not eligible for a license");
+    } else {
+        alert("We don't have enough info to determine your eligibility");
+    }
+}
 
 
 
