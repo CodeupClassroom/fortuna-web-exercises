@@ -214,7 +214,34 @@
 
 
 
+		// function getGoldReindeer(reindeerArray){
+		// 	var bucket = [];
+		//
+		// 	for(var i = 0; i < reindeerArray.length; i++){
+		// 		if(reindeerArray[i].isGold === true){
+		// 			bucket.push(reindeerArray[i]);
+		// 		}
+		// 	}
+		//
+		// 	return bucket;
+		// }
 
+
+		function getGoldReindeer(reindeerArray){
+			var bucket = [];
+
+			reindeerArray.forEach(function (reindeer) {
+				if(reindeer.isGold === true){
+					bucket.push(reindeer);
+				}
+			})
+
+
+			return bucket;
+		}
+
+
+		console.log(getGoldReindeer(reindeerList));
 
 
 	</script>
