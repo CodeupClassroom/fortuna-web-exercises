@@ -7,109 +7,55 @@
 //         .toggleClass()
 
 
-// Getters and Setters
+// ******* Getters and Setters **********
 
 // Getter for text of logo color
-function getColorText() {
-    // will return a string, inside the #colorText span
-    return $('#colorText').html();
-}
 
 // Setter for text of logo color
-function setColorText(color) {
-    // will set the text to the passed in color, and also change its CSS color
-    return $('#colorText').css('color', color.toLowerCase()).html(color);
-}
 
 // Getter for section color
-function getSectionColor(section) {
-    return $(section).attr('class');
-}
 
 // Setter for the section color
-function changeSectionColor(color, section) {
+    // change all sections if 'all' is passed in
+    // if individual section is passed in, change its color (used for Rainbow effect)
 
-    if (section === "all") {   // change all sections if 'all' is passed in
-        // check for current color, and remove it
-        // var section = $('.codeup-logo > path').attr('id');
-        // $('.codeup-logo > path').removeClass(getSectionColor(section));
-        resetColor();
 
-        return $('.codeup-logo > path').addClass(color);
-    } else {   // if a color is passed in, add the appropriate css class
-        $(section).removeClass(getSectionColor(section));
-        return $(section).addClass(color);
-    }
-}
+// reset all path elements to default, and change the 'color' text in the h2 to 'green'
 
-// reset all elements to default
-function resetColor() {
-    $('.codeup-logo > path').removeClass(function () {
-        return $(this).attr('class');
-    });
-    $('#colorText').removeClass(function () {
-        return $(this).attr('class');
-    });
-    $(document).html('Green');
-}
 
-// change the logo to rainbow
-function rainbowLogo() {
-    var text = 'rainbow';
-    var logoSections = ['#path1', '#path2', '#path3', '#path4', '#path5', '#path6'];
-    var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple'];
-    var counter = 0;
+// write a function called rainbowLogo() that changes the logo to rainbow colors
 
-    logoSections.forEach(function (section) {
-        changeSectionColor(colors[counter], section);
-        // $(section).addClass(colors[counter]);
-        counter++;
-    });
-    // split up 'RAINBOW' and make it different colors
-    var colorfulText = [];
-    var i = 0;
-    var counter = 0;
-    text.split('').forEach(function (letter) {
-        colorfulText[i] = '<span class="' + colors[counter] + '">' + letter + '</span>';
-        if( counter === 5 ) {
-            counter = 0; // reset so we start our colors over again
-        }
-        counter++; i++;
-    });
-    text = colorfulText.join(' ');
-    console.log(text);
-    $('#colorText').html(text);
-}
-var circleClickCount = 0;
-var circleButton = $('.circle').click(function () {
-    // change color of logo paths
 
-    var clickedColor = $(this).attr('id');
+// Set a variable called circleClickCount, to keep track of how many times an individual circle has been clicked
 
-    circleClickCount++;
 
-    if(clickedColor === 'rainbow') {
-        console.log('rainbow');
-        // var section = $('.codeup-logo > path').attr('id');
-        // $('.codeup-logo > path').removeClass(getSectionColor(section));
-        resetColor();
-        rainbowLogo();
-    } else {
-        console.log(clickedColor);
-        // change color text, text color, and path colors
-        setColorText(clickedColor);
-        changeSectionColor(clickedColor, 'all');
-    }
+// Add a click listener to each of the 'circle' elements at the botto of the page, and make each color circle
+    // change the logo to the clicked color, or rainbow, if rainbow was clicked
+        // If the same color is clicked twice, toggle the 'caps' class to UPPERCASE and lowercase the color name
 
-    // If we've clicked the same circle twice, let's UPPERCASE it
-    if( $('.codeup-logo').attr('id') === clickedColor ) {
-        // the circle is already this color, so let's emphasize by underlining the color text
-        $('#colorText').toggleClass('caps', circleClickCount %2 !== 0);
 
-        console.log("they're the same");
-    } else {
-        circleClickCount = 0;
-    }
-    console.log(circleClickCount);
-    $('.codeup-logo').attr('id', clickedColor);
-});
+// *********************** Traversing Methods ********************************* //
+
+// now let's traverse some elements
+
+// .each()   .first()    .last()    .children()    .parent()    .next()
+
+// TODO: Let's give each of the selection circles a 1px black border
+
+
+// TODO: Let's take the border away from the first circle
+
+
+// TODO: Let's make the last circle disappear
+
+
+// TODO: Find the children of the circle row, and remove borders from all of them, then unhide the last circle
+
+
+// TODO: while changing the fist path element to have a black fill, give its grandparent a light gray background and 10px padding
+
+
+// TODO: change the second path element to blue, then change the 'next' element to yellow
+
+
+// TODO: What's the difference between changing the class to change the color, and simply changing the color directly?
