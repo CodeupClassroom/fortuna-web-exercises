@@ -35,6 +35,29 @@ $(document).ready(function() {
             price: 2299
         }
     ];
+    var cart = [
+        {
+            item: 'apple',
+            cost: 0.50
+        },
+        {
+            item: 'banana',
+            cost: 10.00
+        },
+        {
+            item: 'dragonFruit',
+            cost: 49
+        }
+    ];
+
+
+    var cartTotal = cart.reduce(function(total, item) {
+       return total + item.item + ' ';
+    }, 'fruits: ');
+    console.log(cartTotal);
+
+    // ES6
+    // var cartTotal = cart.reduce((total,item) => total + item.cost, 0);
 
     // *****************   ******     ******************//
     // *****************  TODO: MAP() ******************//
@@ -121,7 +144,7 @@ $(document).ready(function() {
 
 
     /********************************* 2 *********************************/
-    //  2. Use map()
+    //  2. Use reduce()
 
 
     /********************************* 3 *********************************/
